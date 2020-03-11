@@ -13,7 +13,7 @@ struct GithubAPI {
     let baseUrl = "https://api.github.com"
     
     // You can use this url: https://api.github.com to see github api available endpoints.
-    // But we included here the base ones for you
+    // But we included here the basic one for you
     
     // Use https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order} to fetch repos by name
     // Params:
@@ -33,7 +33,7 @@ struct GithubAPI {
         return route + mutableQuery
     }
     
-    func searchRepository<T: Codable>(searchValue: String, type: T.Type, callback: @escaping (T?, String?) -> Void) {
+    func searchRepository(searchValue: String, callback: @escaping (Any?, String?) -> Void) {
         let endpoint = route("search/repositories")
         let queryEndpoint = query(route: endpoint, query: ["q": searchValue])
         guard let url = URL(string: queryEndpoint) else {
@@ -41,17 +41,11 @@ struct GithubAPI {
             return
         }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let responseData = data else {
+            guard data != nil else {
                 callback(nil, error?.localizedDescription)
                 return
             }
-            do {
-                let object = try JSONDecoder().decode(type, from: responseData)
-                callback(object, nil)
-            } catch (let e) {
-                print(e)
-                callback(nil, e.localizedDescription)
-            }
+            callback(data, nil)
         }
         task.resume()
     }

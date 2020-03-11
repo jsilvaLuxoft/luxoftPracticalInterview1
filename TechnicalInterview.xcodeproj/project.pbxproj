@@ -40,7 +40,7 @@
 		BF6296C9241960E800A99971 /* TechnicalInterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalInterviewTests.swift; sourceTree = "<group>"; };
 		BF6296CB241960E800A99971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6296D4241960FC00A99971 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
-		BF6296D62419717B00A99971 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF6296D724197F2800A99971 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,7 @@
 		BF6296A6241960E600A99971 = {
 			isa = PBXGroup;
 			children = (
+				BF6296D724197F2800A99971 /* README.md */,
 				BF6296B1241960E600A99971 /* TechnicalInterview */,
 				BF6296C8241960E800A99971 /* TechnicalInterviewTests */,
 				BF6296B0241960E600A99971 /* Products */,
@@ -90,7 +91,6 @@
 				BF6296BD241960E800A99971 /* LaunchScreen.storyboard */,
 				BF6296C0241960E800A99971 /* Info.plist */,
 				BF6296D4241960FC00A99971 /* GithubAPI.swift */,
-				BF6296D62419717B00A99971 /* README.md */,
 			);
 			path = TechnicalInterview;
 			sourceTree = "<group>";
