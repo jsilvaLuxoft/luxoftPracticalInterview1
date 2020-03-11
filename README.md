@@ -2,7 +2,12 @@
 
 ## Instructions
 
-This is Luxoft practical interview project for iOS positions. You can download or clone the repo to start making the test. The test should have a duration of 45 minutes to be completed and you should focus on completing the requirements of the test first, the main focus is to check code quality.
+This is Luxoft practical interview project for iOS positions. You can download or clone the repo to start making the test. The test should have a duration of 45 minutes to be completed and you should focus on completing the requirements of the test first, the main focus is to check code quality so there is no issue if you dont complete the test.
+
+### Description
+
+We expect you to fetch a list of repos from Github API; basic API call is already implemented in GithubAPI.swift file and display the results on a table view on the main view controller. Also you have to implement a text field that helps to filter the repos (from the API call).
+
 
 ### Requirements of the test: 
 
