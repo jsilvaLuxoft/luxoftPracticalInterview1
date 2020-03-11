@@ -33,7 +33,7 @@ We expect you to fetch a list of repos from Github API; basic API call is alread
 - You can use storyboards, code generated viewcontrollers/interface or xibs to create the controllers.
 - You can google and check the documentation if you need. (We don't expect you to know everything by memory) 
 - You can ask the interviewer any doubt you have about the test.
-- Sometimes the interviewer may suggest you something during the test, this is mainly to help you complete the test if we see you stuck on something.
+- Sometimes the interviewer may suggest you something during the test, this is mainly to help you complete the test if we see you are stuck on something.
 - Using SwiftUI is not recommended to be used (Yet).
 - There are no external libraries, frameworks or pods. You can use them freely but keep in mind that you will have to explain why you use them.
 
