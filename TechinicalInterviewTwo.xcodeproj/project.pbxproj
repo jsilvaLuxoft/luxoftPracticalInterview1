@@ -19,6 +19,7 @@
 		BF084D1825DC1E08008158C1 /* HomeBussinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF084D1725DC1E08008158C1 /* HomeBussinessLogic.swift */; };
 		BF084D2525DC1FA0008158C1 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF084D2325DC1FA0008158C1 /* TodoTableViewCell.swift */; };
 		BF084D2625DC1FA0008158C1 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF084D2425DC1FA0008158C1 /* TodoTableViewCell.xib */; };
+		BF97670D25E8064C0033AEFC /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF97670C25E8064C0033AEFC /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BF084D1725DC1E08008158C1 /* HomeBussinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBussinessLogic.swift; sourceTree = "<group>"; };
 		BF084D2325DC1FA0008158C1 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		BF084D2425DC1FA0008158C1 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		BF97670C25E8064C0033AEFC /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		BF084CC625DC1935008158C1 /* TechinicalInterviewTwo */ = {
 			isa = PBXGroup;
 			children = (
+				BF97670B25E806410033AEFC /* Extensions */,
 				BF084D2125DC1F85008158C1 /* Views */,
 				BF084D0C25DC1C67008158C1 /* DataLayer */,
 				BF084D0B25DC1C5C008158C1 /* ViewControllers */,
@@ -176,6 +179,14 @@
 				BF084D2425DC1FA0008158C1 /* TodoTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		BF97670B25E806410033AEFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF97670C25E8064C0033AEFC /* DateExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 				BF084CCC25DC1935008158C1 /* HomeViewController.swift in Sources */,
 				BF084D1825DC1E08008158C1 /* HomeBussinessLogic.swift in Sources */,
 				BF084CC825DC1935008158C1 /* AppDelegate.swift in Sources */,
+				BF97670D25E8064C0033AEFC /* DateExtensions.swift in Sources */,
 				BF084D0825DC1C35008158C1 /* TodoItem.swift in Sources */,
 				BF084CCA25DC1935008158C1 /* SceneDelegate.swift in Sources */,
 			);

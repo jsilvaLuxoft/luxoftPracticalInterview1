@@ -2,28 +2,26 @@
 
 As it will be probably described by the interviewer, you have to complete an excercise for the technical evaluation. Since time is limited, its probably that you wont have enough time to complete the excercise, dont worry about this. Whats more important is the quality of the code, so we will provide you some more info below. Relax and continue :)
 
+## Description 
+
+We have a simple "To Do" app that is in **WIP**. Right now, the project is a little messy (with no architecture or good practices implemented). So we would like you to implement a new functionality and improve the current implementation using the best practices.
+
+The Minimum Viable Product for us to be able to add a new **to do** item and update the table.
+
 # Points of Interests
 
-As mentioned above, we are interested more in the quality of the code rather than completing the excercise, but you should still try to achieve to complete it.
+We are interested more in the quality of the code rather than completing the excercise, but you should still try to achieve to complete it.
 
 - Architecture.
 - Design patterns.
 - Overall code reusability.
 - Problem solving skills.
-- Documentation.
 - Communication (We will leave 10 minutes before the end of the interview to make some questions about your solution and approach to the problem). 
 
+## To do in the excercise
 
-## Description 
-
-We have a todo app that is in **WIP**, the person who started it, left the company and he only placed a few files in the project. Right now, after some time we noticed that the app has a crash, so its extremely important to fix it to know how much the app can do. 
-
-The Minimum Viable Product for us is to be able to see all the todo items, with their respective "Complete" status and being able to add new todo items.
-
-## To do in the project
-- Fix the crash.
-- Fetch the Todo items from an API (provided in the project) and parse them.
-- Implement the create todo item screen and functionality.
+- Implement the cell configuration with the array provided. 
+- Implement the create to do screen and functionality (only add a textField and create button, for the date fields, use the current date).
 - Implement the update logic (so the Home screen shows the newly created item).
 - Make sure the unit tests are working.
 
@@ -31,7 +29,7 @@ The Minimum Viable Product for us is to be able to see all the todo items, with 
 
 - Implement the two empty tests defined in **HomeTests.swift**
 - Improve the **BusinessLogicObject** in HomeViewController
-- Use **Codable/Decodable** protocol to parse the items from the API.
+- Handle errors and loading layer (display a loading view to know when we are waiting for the API response)
 
 ### A few extra notes
 

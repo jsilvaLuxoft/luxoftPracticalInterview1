@@ -35,7 +35,15 @@ struct TodoAPI: API {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            // TODO: Handle the response and initialize the TodoItem array that we will return
+            DispatchQueue.main.async {
+                guard let data = data else {
+                    complete(nil, "No response")
+                    return
+                }
+                
+                let items = try? JSONDecoder().decode([TodoItem].self, from: data)
+                complete(items, error?.localizedDescription)
+            }
         }.resume()
     }
     

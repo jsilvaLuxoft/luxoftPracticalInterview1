@@ -33,7 +33,6 @@
                     <navigationItem key="navigationItem" id="NX6-So-k2V"/>
                     <connections>
                         <outlet property="tableView" destination="Dsa-fl-Rjz" id="qvM-Ih-6xM"/>
-                        <outlet property="todoTableView" destination="Dsa-fl-Rjz" id="TrQ-sN-wNQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

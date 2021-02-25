@@ -7,9 +7,6 @@
 
 import Foundation
 
-// TODO: Implement the logic to handle the todoItems
-// TODO: Also implement the logic to display/update/reload the info in the tableView of home.
-
 /*
  Notes:
  
@@ -21,10 +18,10 @@ import Foundation
 
 class HomeBusinessLogic {
     
-    func fetchItems() {
+    func fetchItems(complete: @escaping ([TodoItem], String?) -> Void) {
         let api = TodoAPI()
         api.fetchTodoItems { items, error in
-            
+            complete(items ?? [],error)
         }
     }
     
